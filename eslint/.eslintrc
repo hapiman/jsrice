@@ -7,6 +7,8 @@
         "comma-spacing": [2, { "before": false, "after": true }],  
         "comma-style": [2, "last"],  
         "eqeqeq": "warn",
+        "yoda": ["error","always"],
+        "curly": ["error", "multi-line"],
         "no-cond-assign": 2
     }
 }
