@@ -1,0 +1,12 @@
+{
+    "root": true,
+    "rules": {
+        "semi": ["error", "never"],
+        "quotes": ["error", "single"],
+        "indent": ["error", 2],
+        "comma-spacing": [2, { "before": false, "after": true }],  
+        "comma-style": [2, "last"],  
+        "eqeqeq": "warn",
+        "no-cond-assign": 2
+    }
+}
