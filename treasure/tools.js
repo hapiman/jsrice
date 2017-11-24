@@ -13,6 +13,7 @@ var isEmptyObject  = function(obj){
    return true
 }
 
+//浅拷贝
 var extendCopy = function(p){
     var c = {}
     for(let k in p ){
@@ -21,6 +22,7 @@ var extendCopy = function(p){
     return c
 }
 
+//深拷贝
 var deepCopy = function(p){
     var c = {}
     for(let k in p){
@@ -34,10 +36,22 @@ var deepCopy = function(p){
     return c 
 }
 
+//获取对象的私有属性 使用hasOwnProperty, for-in会列出全部属性 
+//使用 isPrototypeOf判断是否是选型上的方法 
+var printOwnKeys = function(obj){
+    for(var k in obj){
+        if(obj.hasOwnProperty(k)){
+            console.log(k);
+        }
+    }
+}
+
 module.exports = {
     isObject:isObject,
     isEmptyObject:isEmptyObject,
 
     extendCopy,
-    deepCopy
+    deepCopy,
+
+    printOwnKeys
 }
