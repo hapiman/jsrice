@@ -1,14 +1,16 @@
+
 {
-    "root": true,
-    "rules": {
-        "semi": ["error", "never"],
-        "quotes": ["error", "single"],
-        "indent": ["error", 2],
-        "comma-spacing": [2, { "before": false, "after": true }],  
-        "comma-style": [2, "last"],  
-        "eqeqeq": "warn",
-        "yoda": ["error","always"],
-        "curly": ["error", "multi-line"],
-        "no-cond-assign": 2
-    }
-}
+"extends": "standard",
+"rules": {
+    "no-undef": 0,
+    "generator-star-spacing": 0,
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "indent": ["error", 2],
+    "comma-spacing": [2, { "before": false, "after": true }],
+    "comma-style": [2, "last"],
+    "eqeqeq": "warn",
+    "yoda": ["error","always"],
+    "curly": ["error", "multi-line"],
+    "no-cond-assign": 2
+}}
